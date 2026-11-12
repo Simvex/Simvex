@@ -12,15 +12,27 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist", "README.md", "LICENSE"],
-  "engines": { "node": ">=22" },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
   "sideEffects": false,
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "check": "tsc -p tsconfig.json --noEmit",
-    "test": "npm run build && node --test \"test/*.test.mjs\""
+    "test": "npm run build && node --test \"test/*.test.mjs\"",
+    "prepare": "tsc -p tsconfig.json"
   },
   "devDependencies": {
     "typescript": "5.9.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simvex/simvex-js.git"
+  },
+  "homepage": "https://simvex.xyz/guide"
 }

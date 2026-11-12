@@ -1,13 +1,28 @@
+<p align="center"><img src="https://raw.githubusercontent.com/Simvex/Simvex/main/assets/banner.jpg" alt="Simvex. Lose it on paper first." width="100%"></p>
+
+<p align="center">
+  <a href="https://simvex.xyz/guide"><img alt="Docs" src="https://img.shields.io/badge/docs-guide-F6C62F?style=flat-square&labelColor=1A1714"></a>
+  <img alt="TypeScript" src="https://img.shields.io/badge/typescript-ESM_%2B_types-6CBFEE?style=flat-square&labelColor=1A1714">
+  <img alt="No runtime dependencies" src="https://img.shields.io/badge/runtime_deps-0-F5EEE1?style=flat-square&labelColor=1A1714">
+  <img alt="MIT" src="https://img.shields.io/badge/license-MIT-F5EEE1?style=flat-square&labelColor=1A1714">
+  <a href="https://t.me/SimvexApiBot"><img alt="Get a key" src="https://img.shields.io/badge/get_a_key-%2Fkey-E2372B?style=flat-square&labelColor=1A1714"></a>
+</p>
+
 # simvex-client (TypeScript)
 
 TypeScript client for the Simvex paper-trading API for Solana trading bots. MIT licensed, ESM, with type definitions. **No runtime dependencies:** it uses the global `fetch` and `WebSocket` (Node 22 or later, and browsers).
 
 > **Your bot needs an API key (`dr_...`), never a private key or seed phrase.** The client refuses any key that does not start with `dr_`. Every result is paper trading and real fills may differ.
 
-## Build
+## Install
 
 ```bash
-cd sdk/typescript
+npm install github:Simvex/simvex-js   # builds on install (prepare script)
+```
+
+## Build from source
+
+```bash
 npm install          # TypeScript, the only dev dependency
 npm run build        # tsc -> dist/
 npm run check        # tsc --noEmit
@@ -59,3 +74,9 @@ for await (const ev of s) console.log(ev.seq, ev.channel, ev.data);
 `health`, `ladder`, `plans`, `status`, `fillModel`, `me`, `redeemInvite`, `bots`, `createBot`, `bot`, `resetBot`, `botSettings`, `leaderboardOptIn`, `tokensNew`, `token`, `snapshots`, `quote`, `placeOrder`, `order`, `orders`, `cancelOrder`, `waitForOrder`, `positions`, `fills`, `equity`, `decisions`, `replayRange`, `createReplay`, `replay`, `inReplay`, `replays`, `replaySessionInfo`, `advanceReplay`, `finishReplay`, `checkClaim`, `claim`, `board`, `leaderboard`, `botCard`, `arena`, `arenaSeason`, `arenaEnter`, `arenaEntries`, `compatQuote`, `compatTrade`, `stream`, and `request(method, path, {query, json, headers})` for anything else.
 
 Paper trading result. Real fills may differ.
+
+## More
+
+- Docs and the fill model: [simvex.xyz/guide](https://simvex.xyz/guide), [Simvex/docs](https://github.com/Simvex/docs)
+- Python client: [Simvex/simvex-python](https://github.com/Simvex/simvex-python)
+- Example bots: [Simvex/simvex-examples](https://github.com/Simvex/simvex-examples)
