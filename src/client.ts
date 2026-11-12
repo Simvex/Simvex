@@ -3,7 +3,7 @@ import type { Body, ClaimIn, Fill, Order, OrderIn, Quote, ReplaySession, TokensN
 import { Stream, type StreamOptions } from "./ws.js";
 
 export const VERSION = "0.1.0";
-export const DEFAULT_BASE_URL = "http://127.0.0.1:8410";
+export const DEFAULT_BASE_URL = "https://simvex.xyz";
 export const DISCLAIMER = "Paper trading result. Real fills may differ.";
 const REPLAY_HEADER = "X-Replay-Session";
 const IDEMPOTENT = new Set(["GET", "HEAD", "OPTIONS", "PUT", "DELETE"]);
@@ -31,7 +31,7 @@ export const DEFAULT_RETRY: RetryPolicy = {
 export interface ClientOptions {
   /** dr_ key. Defaults to process.env.SIMVEX_API_KEY in Node. Never a wallet private key. */
   apiKey?: string;
-  /** Defaults to process.env.SIMVEX_BASE_URL, then http://127.0.0.1:8410. */
+  /** Defaults to process.env.SIMVEX_BASE_URL, then https://simvex.xyz. */
   baseUrl?: string;
   retry?: Partial<RetryPolicy>;
   /** Bind every call to a replay session (sends X-Replay-Session). */
