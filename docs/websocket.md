@@ -35,6 +35,6 @@ and the server sends what you missed from the last 5 minutes. The server pings e
 
 Step 3 opens the socket an hour before step 4 opens the plans. Between those two steps every key gets the free plan plus a WebSocket with 5 price channels, so nobody waits an hour for a socket. From step 4 the plan table in [limits](limits.md) applies as written.
 
-Both clients speak it: [Python](https://github.com/Simvex/simvex-python) (`pip install "simvex-client[ws] @ git+https://github.com/Simvex/simvex-python"`) and [TypeScript](https://github.com/Simvex/simvex-js) (the global `WebSocket`).
+Both clients speak it: [Python](https://github.com/Simvex/Simvex/tree/main/sdk/python) (`pip install "simvex-client[ws] @ git+https://github.com/Simvex/Simvex#subdirectory=sdk/python"`) and [TypeScript](https://github.com/Simvex/Simvex/tree/main/sdk/typescript) (the global `WebSocket`).
 
 Paper trading result. Real fills may differ.

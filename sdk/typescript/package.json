@@ -32,7 +32,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Simvex/simvex-js.git"
+    "url": "git+https://github.com/Simvex/Simvex.git",
+    "directory": "sdk/typescript"
   },
   "homepage": "https://simvex.xyz/guide"
 }

@@ -17,7 +17,7 @@ TypeScript client for the Simvex paper-trading API for Solana trading bots. MIT 
 ## Install
 
 ```bash
-npm install github:Simvex/simvex-js   # builds on install (prepare script)
+git clone https://github.com/Simvex/Simvex && cd Simvex/sdk/typescript && npm install   # builds on install (prepare script)
 ```
 
 ## Build from source
@@ -77,6 +77,6 @@ Paper trading result. Real fills may differ.
 
 ## More
 
-- Docs and the fill model: [simvex.xyz/guide](https://simvex.xyz/guide), [Simvex/docs](https://github.com/Simvex/docs)
-- Python client: [Simvex/simvex-python](https://github.com/Simvex/simvex-python)
-- Example bots: [Simvex/simvex-examples](https://github.com/Simvex/simvex-examples)
+- Docs and the fill model: [simvex.xyz/guide](https://simvex.xyz/guide), [docs](https://github.com/Simvex/Simvex/tree/main/docs)
+- Python client: [sdk/python](https://github.com/Simvex/Simvex/tree/main/sdk/python)
+- Example bots: [examples](https://github.com/Simvex/Simvex/tree/main/examples)

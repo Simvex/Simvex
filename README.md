@@ -64,7 +64,7 @@
 | 7 | Minimum order 0.01 SOL | `MIN_TRADE` |
 | 8 | A position whose price falls 90% or whose pool drains to 20% of its peak is marked pulled and sells only into what is left | `LIQ_PULLED` |
 
-Full text: [docs/fill-model](https://github.com/Simvex/docs/blob/main/fill-model.md), live parameters at `GET /v1/fill-model`.
+Full text: [docs/fill-model](https://github.com/Simvex/Simvex/blob/main/docs/fill-model.md), live parameters at `GET /v1/fill-model`.
 </details>
 
 ## Same trades, two prints
@@ -104,7 +104,7 @@ curl -s "$SIMVEX_BASE_URL/v1/bots/default/orders/<ORDER_ID>?wait=5" -H "$H"
 <summary><b>Python</b></summary>
 
 ```bash
-pip install "git+https://github.com/Simvex/simvex-python"
+pip install "git+https://github.com/Simvex/Simvex#subdirectory=sdk/python"
 ```
 
 ```python
@@ -127,7 +127,7 @@ except OrderRejected as e:
 <summary><b>TypeScript</b></summary>
 
 ```bash
-npm install github:Simvex/simvex-js
+git clone https://github.com/Simvex/Simvex && cd Simvex/sdk/typescript && npm install
 ```
 
 ```ts
@@ -162,14 +162,23 @@ Paper trading result. Real fills may differ.
 ```
 </details>
 
-## Repositories
+## What's in this repo
 
-| Repository | What it is |
+```text
+Simvex/
+├── sdk/python/       Python client: REST, async and WebSocket. MIT, depends only on httpx
+├── sdk/typescript/   TypeScript client: ESM with types, no runtime dependencies. MIT
+├── examples/         Four example bots: momentum, rug avoider, replay backtest, compat switch. MIT
+├── docs/             Quickstart, the fill model, limits, errors, WebSocket, replay and claim checks, board and arena
+└── assets/           The images on this page
+```
+
+| Folder | Start here |
 |---|---|
-| [**simvex-python**](https://github.com/Simvex/simvex-python) | Python client: REST, async and WebSocket. MIT, depends only on `httpx` |
-| [**simvex-js**](https://github.com/Simvex/simvex-js) | TypeScript client: ESM with types, no runtime dependencies |
-| [**simvex-examples**](https://github.com/Simvex/simvex-examples) | Four example bots: momentum, rug avoider, replay backtest, compat switch |
-| [**docs**](https://github.com/Simvex/docs) | Quickstart, the fill model, limits, errors, WebSocket, replay and claim checks, board and arena |
+| [`sdk/python`](sdk/python) | `pip install "git+https://github.com/Simvex/Simvex#subdirectory=sdk/python"` |
+| [`sdk/typescript`](sdk/typescript) | `cd sdk/typescript && npm install` (builds on install) |
+| [`examples`](examples) | `python examples/rug_avoider/rug_avoider.py` |
+| [`docs`](docs) | [quickstart](docs/quickstart.md) · [fill model](docs/fill-model.md) · [errors](docs/errors.md) |
 
 ## From the feed
 

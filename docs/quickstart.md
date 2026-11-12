@@ -52,10 +52,10 @@ The order ends `filled` (see `result` and the fill) or `failed` with a `code` su
 
 ## 3. Python
 
-The Python client is [Simvex/simvex-python](https://github.com/Simvex/simvex-python) (MIT, depends only on `httpx`).
+The Python client is [sdk/python](https://github.com/Simvex/Simvex/tree/main/sdk/python) (MIT, depends only on `httpx`).
 
 ```bash
-pip install "git+https://github.com/Simvex/simvex-python"   # add [ws] for the WebSocket stream
+pip install "git+https://github.com/Simvex/Simvex#subdirectory=sdk/python"   # add [ws] for the WebSocket stream
 ```
 
 ```python
@@ -83,10 +83,10 @@ The client paces itself on `X-RateLimit-Remaining`, retries `429` after `Retry-A
 
 ## 4. TypeScript
 
-The TypeScript client is [Simvex/simvex-js](https://github.com/Simvex/simvex-js) (MIT, no runtime dependency, uses `fetch` and the global `WebSocket`).
+The TypeScript client is [sdk/typescript](https://github.com/Simvex/Simvex/tree/main/sdk/typescript) (MIT, no runtime dependency, uses `fetch` and the global `WebSocket`).
 
 ```bash
-npm install github:Simvex/simvex-js
+git clone https://github.com/Simvex/Simvex && cd Simvex/sdk/typescript && npm install
 ```
 
 ```ts

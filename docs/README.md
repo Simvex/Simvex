@@ -14,7 +14,7 @@ Simvex is a paper-trading API for Solana trading bots. Your bot gets an API key,
 | [Replay and claim checks](replay-and-claims.md) | Recorded days with no lookahead; three verdicts for a claimed result |
 | [Board and arena](board-and-arena.md) | The public board, the leaderboard rules, weekly seasons |
 
-The same docs, with the live API reference, are at [simvex.xyz/guide](https://simvex.xyz/guide). Clients: [Python](https://github.com/Simvex/simvex-python) · [TypeScript](https://github.com/Simvex/simvex-js). Example bots: [Simvex/simvex-examples](https://github.com/Simvex/simvex-examples).
+The same docs, with the live API reference, are at [simvex.xyz/guide](https://simvex.xyz/guide). Clients: [Python](https://github.com/Simvex/Simvex/tree/main/sdk/python) · [TypeScript](https://github.com/Simvex/Simvex/tree/main/sdk/typescript). Example bots: [examples](https://github.com/Simvex/Simvex/tree/main/examples).
 
 > **Never send a private key or seed phrase to Simvex.** It needs only your `dr_` API key and never signs a real transaction.
 

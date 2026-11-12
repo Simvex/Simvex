@@ -2,22 +2,22 @@
 
 # Example bots
 
-Four small bots on Simvex paper trading, MIT licensed. They use the [Python client](https://github.com/Simvex/simvex-python) and print what they did and the disclaimer. They are starting points to test and change, not strategies to trust: a negative result is a normal and useful outcome.
+Four small bots on Simvex paper trading, MIT licensed. They use the [Python client](https://github.com/Simvex/Simvex/tree/main/sdk/python) and print what they did and the disclaimer. They are starting points to test and change, not strategies to trust: a negative result is a normal and useful outcome.
 
 > **Never send a private key or seed phrase.** These bots need only a `dr_` API key in `SIMVEX_API_KEY`.
 
 ```bash
-pip install "simvex-client[ws] @ git+https://github.com/Simvex/simvex-python"
+pip install "simvex-client[ws] @ git+https://github.com/Simvex/Simvex#subdirectory=sdk/python"
 export SIMVEX_API_KEY=dr_...                 # send /key to t.me/SimvexApiBot
 export SIMVEX_BASE_URL=https://simvex.xyz    # the default
 ```
 
 | Example | What it shows | Run |
 |---|---|---|
-| [momentum_bot](momentum_bot/momentum_bot.py) | New pairs that pass the rug check and are rising over their last snapshots: market buy with an idempotent `client_order_id`, then a `tp_sl` order (take profit, stop loss, trailing stop) on each position | `python momentum_bot/momentum_bot.py --steps 3 --interval 20` |
-| [rug_avoider](rug_avoider/rug_avoider.py) | Reads each token's full rug report and enters only strict passes; sets `rug_block=strict` so the server refuses failing tokens too, and shows one `RUG_BLOCKED` on purpose | `python rug_avoider/rug_avoider.py` |
-| [compat_switch](compat_switch/compat_switch.py) | A bot written in plain `httpx` against the request formats of a widely used quote API and a widely used trade API (format only, no affiliation); only `QUOTE_BASE` and `TRADE_BASE` point it at Simvex. The live URLs are comments, never called | `python compat_switch/compat_switch.py` |
-| [replay_backtest](replay_backtest/replay_backtest.py) | The unchanged momentum bot inside a replay session: every call carries `X-Replay-Session`, the clock moves with `advance`, the result is deterministic for the same window | `python replay_backtest/replay_backtest.py --minutes 60 --step 120` |
+| [momentum_bot](momentum_bot/momentum_bot.py) | New pairs that pass the rug check and are rising over their last snapshots: market buy with an idempotent `client_order_id`, then a `tp_sl` order (take profit, stop loss, trailing stop) on each position | `python examples/momentum_bot/momentum_bot.py --steps 3 --interval 20` |
+| [rug_avoider](rug_avoider/rug_avoider.py) | Reads each token's full rug report and enters only strict passes; sets `rug_block=strict` so the server refuses failing tokens too, and shows one `RUG_BLOCKED` on purpose | `python examples/rug_avoider/rug_avoider.py` |
+| [compat_switch](compat_switch/compat_switch.py) | A bot written in plain `httpx` against the request formats of a widely used quote API and a widely used trade API (format only, no affiliation); only `QUOTE_BASE` and `TRADE_BASE` point it at Simvex. The live URLs are comments, never called | `python examples/compat_switch/compat_switch.py` |
+| [replay_backtest](replay_backtest/replay_backtest.py) | The unchanged momentum bot inside a replay session: every call carries `X-Replay-Session`, the clock moves with `advance`, the result is deterministic for the same window | `python examples/replay_backtest/replay_backtest.py --minutes 60 --step 120` |
 
 Replay needs plan hours (trainee or higher) or fuel; the momentum and rug examples run on the free plan, slowly (30 calls per minute).
 
@@ -56,8 +56,8 @@ Paper trading result. Real fills may differ.
 | `FILL_FAILED_SLIPPAGE` | order | the fresh quote at confirmation moved past your `slippage_bps` |
 | `FILL_FAILED_LIQ` | order | liquidity was pulled before confirmation; principal returned |
 
-The full list is in the [docs](https://github.com/Simvex/docs).
+The full list is in the [docs](https://github.com/Simvex/Simvex/tree/main/docs).
 
 Paper trading result. Real fills may differ.
 
-More: [Python client](https://github.com/Simvex/simvex-python) · [TypeScript client](https://github.com/Simvex/simvex-js) · [docs](https://github.com/Simvex/docs) · [simvex.xyz](https://simvex.xyz)
+More: [Python client](https://github.com/Simvex/Simvex/tree/main/sdk/python) · [TypeScript client](https://github.com/Simvex/Simvex/tree/main/sdk/typescript) · [docs](https://github.com/Simvex/Simvex/tree/main/docs) · [simvex.xyz](https://simvex.xyz)

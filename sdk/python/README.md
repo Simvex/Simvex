@@ -16,8 +16,8 @@ Python client for the Simvex paper-trading API for Solana trading bots. MIT lice
 ## Install
 
 ```bash
-pip install "git+https://github.com/Simvex/simvex-python"          # REST and async
-pip install "simvex-client[ws] @ git+https://github.com/Simvex/simvex-python"   # with the WebSocket stream
+pip install "git+https://github.com/Simvex/Simvex#subdirectory=sdk/python"          # REST and async
+pip install "simvex-client[ws] @ git+https://github.com/Simvex/Simvex#subdirectory=sdk/python"   # with the WebSocket stream
 ```
 
 ## Use
@@ -88,12 +88,12 @@ pytest tests                       # unit tests, no server needed
 
 ## Before going live
 
-A paper result is a test, not a forecast. Use a fresh wallet that holds only what you can lose and never paste a private key or seed phrase anywhere. See "Before going live" in the [quickstart](https://github.com/Simvex/docs/blob/main/quickstart.md).
+A paper result is a test, not a forecast. Use a fresh wallet that holds only what you can lose and never paste a private key or seed phrase anywhere. See "Before going live" in the [quickstart](https://github.com/Simvex/Simvex/blob/main/docs/quickstart.md).
 
 Paper trading result. Real fills may differ.
 
 ## More
 
-- Docs and the fill model: [simvex.xyz/guide](https://simvex.xyz/guide), [Simvex/docs](https://github.com/Simvex/docs)
-- TypeScript client: [Simvex/simvex-js](https://github.com/Simvex/simvex-js)
-- Example bots: [Simvex/simvex-examples](https://github.com/Simvex/simvex-examples)
+- Docs and the fill model: [simvex.xyz/guide](https://simvex.xyz/guide), [docs](https://github.com/Simvex/Simvex/tree/main/docs)
+- TypeScript client: [sdk/typescript](https://github.com/Simvex/Simvex/tree/main/sdk/typescript)
+- Example bots: [examples](https://github.com/Simvex/Simvex/tree/main/examples)
