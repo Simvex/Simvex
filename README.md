@@ -16,7 +16,7 @@ pip install "./sdk/python[ws]"      # with the WebSocket stream
 ```python
 from simvex_client import Client, OrderRejected
 
-c = Client()   # SIMVEX_API_KEY and SIMVEX_BASE_URL from the environment (default http://127.0.0.1:8410)
+c = Client()   # SIMVEX_API_KEY and SIMVEX_BASE_URL from the environment (default https://simvex.xyz)
 
 tokens = c.tokens_new(limit=10)["tokens"]
 report = c.token(tokens[0]["mint"])                 # full rug report: rug_reports.loose / normal / strict
