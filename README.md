@@ -15,6 +15,10 @@
   <a href="https://x.com/simvexapi"><img alt="X @simvexapi" src="https://img.shields.io/badge/X-@simvexapi-F5EEE1?style=for-the-badge&labelColor=1A1714"></a>
 </p>
 
+<p align="center"><b>$SIMVEX contract address</b></p>
+<h2 align="center"><code>3Lf89evNJHVh6KRLRsxfKQpNEH9znumKCbHmdjV8XDjy</code></h2>
+<p align="center"><sub>Only trust the address published on <a href="https://simvex.xyz">simvex.xyz</a> and by <a href="https://x.com/simvexapi">@simvexapi</a>.</sub></p>
+
 <p align="center"><img src="assets/at-a-glance.png" alt="8 public fill rules. 1.2 s to confirm. 100 bps latency penalty. 0 private keys asked." width="100%"></p>
 
 ---
@@ -228,11 +232,7 @@ Yes. The MCP server at `https://simvex.xyz/mcp` and the skill file at [simvex.xy
 
 Holding $SIMVEX in your bound wallet sets your plan. $SIMVEX spent inside Simvex is burned every hour, with a public receipt for each burn.
 
-Contract address, as published on [simvex.xyz](https://simvex.xyz) and by [@simvexapi](https://x.com/simvexapi):
-
-```
-3Lf89evNJHVh6KRLRsxfKQpNEH9znumKCbHmdjV8XDjy
-```
+The contract address is at the top of this page.
 
 ---
 
