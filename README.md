@@ -1,3 +1,12 @@
+<p align="center"><img src="https://raw.githubusercontent.com/Simvex/Simvex/main/assets/banner.jpg" alt="Simvex. Lose it on paper first." width="100%"></p>
+
+<p align="center">
+  <a href="https://simvex.xyz/guide"><img alt="Docs" src="https://img.shields.io/badge/docs-guide-F6C62F?style=flat-square&labelColor=1A1714"></a>
+  <img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-6CBFEE?style=flat-square&labelColor=1A1714">
+  <img alt="MIT" src="https://img.shields.io/badge/license-MIT-F5EEE1?style=flat-square&labelColor=1A1714">
+  <a href="https://t.me/SimvexApiBot"><img alt="Get a key" src="https://img.shields.io/badge/get_a_key-%2Fkey-E2372B?style=flat-square&labelColor=1A1714"></a>
+</p>
+
 # simvex-client (Python)
 
 Python client for the Simvex paper-trading API for Solana trading bots. MIT licensed. Depends only on `httpx`; the WebSocket stream adds `websockets` through the `ws` extra.
@@ -7,8 +16,8 @@ Python client for the Simvex paper-trading API for Solana trading bots. MIT lice
 ## Install
 
 ```bash
-pip install ./sdk/python            # from the repo
-pip install "./sdk/python[ws]"      # with the WebSocket stream
+pip install "git+https://github.com/Simvex/simvex-python"          # REST and async
+pip install "simvex-client[ws] @ git+https://github.com/Simvex/simvex-python"   # with the WebSocket stream
 ```
 
 ## Use
@@ -82,3 +91,9 @@ pytest tests/test_m8_sdk.py        # against the Simvex app in process (repo che
 A paper result is a test, not a forecast. Use a fresh wallet that holds only what you can lose and never paste a private key or seed phrase anywhere. See the quickstart's "Before going live".
 
 Paper trading result. Real fills may differ.
+
+## More
+
+- Docs and the fill model: [simvex.xyz/guide](https://simvex.xyz/guide), [Simvex/docs](https://github.com/Simvex/docs)
+- TypeScript client: [Simvex/simvex-js](https://github.com/Simvex/simvex-js)
+- Example bots: [Simvex/simvex-examples](https://github.com/Simvex/simvex-examples)
