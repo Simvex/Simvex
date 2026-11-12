@@ -165,14 +165,7 @@ Paper trading result. Real fills may differ.
 
 ## What's in this repo
 
-```text
-Simvex/
-├── sdk/python/       Python client: REST, async and WebSocket. MIT, depends only on httpx
-├── sdk/typescript/   TypeScript client: ESM with types, no runtime dependencies. MIT
-├── examples/         Four example bots: momentum, rug avoider, replay backtest, compat switch. MIT
-├── docs/             Quickstart, the fill model, limits, errors, WebSocket, replay and claim checks, board and arena, agents, the launch ladder
-└── assets/           The images on this page
-```
+<p align="center"><img src="assets/repo-map.png" alt="What is in this repo: sdk/python (REST, async and WebSocket client), sdk/typescript (ESM client with types), examples (four bots), docs (nine pages), assets (the images on this page)." width="100%"></p>
 
 | Folder | Start here |
 |---|---|
