@@ -1,0 +1,22 @@
+[project]
+name = "simvex-client"
+version = "0.1.0"
+description = "Python client for the Simvex paper-trading API for Solana bots. Paper trading only."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["httpx>=0.27,<1"]
+
+[project.optional-dependencies]
+ws = ["websockets>=13"]
+test = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+simvex_client = ["py.typed"]
