@@ -82,13 +82,13 @@ async with c.stream(["orders", "fills", "tokens.new", "prices:<MINT>"]) as s:
 ## Tests
 
 ```bash
-pytest sdk/python/tests            # unit tests, no server
-pytest tests/test_m8_sdk.py        # against the Simvex app in process (repo checkout)
+pip install -e ".[ws]" pytest
+pytest tests                       # unit tests, no server needed
 ```
 
 ## Before going live
 
-A paper result is a test, not a forecast. Use a fresh wallet that holds only what you can lose and never paste a private key or seed phrase anywhere. See the quickstart's "Before going live".
+A paper result is a test, not a forecast. Use a fresh wallet that holds only what you can lose and never paste a private key or seed phrase anywhere. See "Before going live" in the [quickstart](https://github.com/Simvex/docs/blob/main/quickstart.md).
 
 Paper trading result. Real fills may differ.
 
