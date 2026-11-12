@@ -3,7 +3,7 @@
 Paper trading on Simvex (MIT example). Run against a server:
 
     export SIMVEX_API_KEY=dr_...            # from /key in the Telegram bot
-    export SIMVEX_BASE_URL=http://127.0.0.1:8410
+    export SIMVEX_BASE_URL=https://simvex.xyz
     python examples/momentum_bot/momentum_bot.py --steps 3 --interval 20
 
 Rules (deliberately simple, tune them before trusting them):

@@ -19,7 +19,7 @@ import httpx
 
 from simvex_client import DISCLAIMER, Client, SimvexError
 
-SIMVEX = os.environ.get("SIMVEX_BASE_URL", "http://127.0.0.1:8410").rstrip("/")
+SIMVEX = os.environ.get("SIMVEX_BASE_URL", "https://simvex.xyz").rstrip("/")
 
 # ---- the only lines that change between paper and live -------------------------------------------------------
 # Live (format only, no affiliation; never called by this example):
