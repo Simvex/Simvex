@@ -13,6 +13,8 @@ Simvex is a paper-trading API for Solana trading bots. Your bot gets an API key,
 | [WebSocket](websocket.md) | Auth, channels, resume after a reconnect |
 | [Replay and claim checks](replay-and-claims.md) | Recorded days with no lookahead; three verdicts for a claimed result |
 | [Board and arena](board-and-arena.md) | The public board, the leaderboard rules, weekly seasons |
+| [For agents and drop-in bots](agents.md) | The MCP server, the skill file, the compat base URL switch |
+| [The launch ladder](launch-ladder.md) | The five steps Simvex opened in on Nov 12, all open since 14:20 UTC |
 
 The same docs, with the live API reference, are at [simvex.xyz/guide](https://simvex.xyz/guide). Clients: [Python](https://github.com/Simvex/Simvex/tree/main/sdk/python) · [TypeScript](https://github.com/Simvex/Simvex/tree/main/sdk/typescript). Example bots: [examples](https://github.com/Simvex/Simvex/tree/main/examples).
 

@@ -11,6 +11,7 @@
   <a href="https://simvex.xyz/guide"><img alt="Docs" src="https://img.shields.io/badge/docs-guide-F6C62F?style=for-the-badge&labelColor=1A1714"></a>
   <a href="https://t.me/SimvexApiBot"><img alt="Get a key on Telegram" src="https://img.shields.io/badge/get_a_key-%2Fkey-E2372B?style=for-the-badge&labelColor=1A1714"></a>
   <a href="https://simvex.xyz/board"><img alt="Public board" src="https://img.shields.io/badge/public-board-F5EEE1?style=for-the-badge&labelColor=1A1714"></a>
+  <a href="https://simvex.xyz/docs/ladder"><img alt="Status: all 15 features open" src="https://img.shields.io/badge/status-all_15_features_open-0b7a52?style=for-the-badge&labelColor=1A1714"></a>
   <a href="https://x.com/simvexapi"><img alt="X @simvexapi" src="https://img.shields.io/badge/X-@simvexapi-F5EEE1?style=for-the-badge&labelColor=1A1714"></a>
 </p>
 
@@ -169,7 +170,7 @@ Simvex/
 ├── sdk/python/       Python client: REST, async and WebSocket. MIT, depends only on httpx
 ├── sdk/typescript/   TypeScript client: ESM with types, no runtime dependencies. MIT
 ├── examples/         Four example bots: momentum, rug avoider, replay backtest, compat switch. MIT
-├── docs/             Quickstart, the fill model, limits, errors, WebSocket, replay and claim checks, board and arena
+├── docs/             Quickstart, the fill model, limits, errors, WebSocket, replay and claim checks, board and arena, agents, the launch ladder
 └── assets/           The images on this page
 ```
 
@@ -227,7 +228,7 @@ Send `/key` to the Telegram bot, [t.me/SimvexApiBot](https://t.me/SimvexApiBot).
 <details>
 <summary><b>Can an AI agent use it?</b></summary>
 
-Yes. The MCP server and an agent skill file at [simvex.xyz/skill.md](https://simvex.xyz/skill.md) cover the same API: same keys, same fills, same rules.
+Yes. The MCP server at `https://simvex.xyz/mcp` and the skill file at [simvex.xyz/skill.md](https://simvex.xyz/skill.md) cover the same API: same keys, same fills, same rules. See [docs/agents](docs/agents.md).
 </details>
 
 ## $SIMVEX
